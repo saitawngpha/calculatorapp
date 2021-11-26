@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTxt"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:ems="10"
+            android:background="@null"
+            android:textSize="60dp"
+            android:gravity="bottom|right"
+            android:inputType="textPersonName"
+            android:text="0" />
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buAC"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buClearEvent"
+                android:text="AC" />
+
+            <Button
+                android:id="@+id/buPlusMin"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="+/-" />
+
+            <Button
+                android:id="@+id/buPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buPercentEvent"
+                android:text="%" />
+
+            <Button
+                android:id="@+id/buDiv"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buEventOp"
+                android:text="/" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bu7"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buEventClick"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/bu8"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buEventClick"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/bu9"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buEventClick"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/buMulti"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buEventOp"
+                android:text="x" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bu4"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buEventClick"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/bu5"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buEventClick"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/bu6"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buEventClick"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/buSub"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buEventOp"
+                android:text="-" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bu1"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buEventClick"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/bu2"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buEventClick"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/bu3"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buEventClick"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/buSum"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buEventOp"
+                android:text="+" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bu0"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buEventClick"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/buDot"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buEventClick"
+                android:text="." />
+
+            <Button
+                android:id="@+id/buEqual"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="buEqualEvent"
+                android:text="=" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
